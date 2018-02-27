@@ -1,10 +1,10 @@
 {
 	"name": "View Image",
 	"description": "Adds View Image button to Google Image",
-	"version": "1.0.2",
+	"version": "1.0.4",
 	"content_scripts": [
 		{
-			"matches": ["https://images.google.*"],
+			"matches": ["<all_urls>"],
 			"js": ["script.js"]
 		}
 	],
