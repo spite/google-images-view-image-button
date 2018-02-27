@@ -15,10 +15,12 @@ window.addEventListener('load', () => {
 			if (img) {
 
 				const downloadBtn = document.createElement( 'a' );
+				document.body.appendChild(downloadBtn);
 				//downloadBtn.setAttribute( 'download', img.src );
 				downloadBtn.setAttribute( 'target', '_blank' );
 				downloadBtn.setAttribute( 'href', img.src );
 				downloadBtn.click();
+				document.body.removeChild(downloadBtn);
 
 				e.preventDefault();
 				e.stopPropagation();
